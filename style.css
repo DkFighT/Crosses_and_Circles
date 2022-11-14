@@ -84,3 +84,8 @@
 #reset:hover{
     background-color: var(--btn_bg_hover);
 }
+@media screen and (orientation: portrait) {
+    *:root{
+        --size: 300px;
+    }
+}
