@@ -42,7 +42,7 @@
     height: 33%;
     text-align: center;
     color: var(--coral);
-    font-size: calc(0.25*var(--size));
+    font-size: 30px;
 }
 .line_ver{
     height: 100%;
