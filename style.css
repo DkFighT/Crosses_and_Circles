@@ -19,7 +19,7 @@
 }
 
 .content{
-    width: min(100% - 15px, var(--size));
+    width: calc(var(--size) + 100px);
     height: 100vh;
     margin-inline: auto;
     display: flex;
