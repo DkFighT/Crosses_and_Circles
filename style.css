@@ -5,7 +5,7 @@
 :root{
     --width: 3px;
     --color: black;
-    --size: 500px;
+    --size: 700px;
     --btn_bg: #01395e;
     --btn_bg_hover: #0091cf;
     --orange: #ceccce;
@@ -14,12 +14,12 @@
 
 @font-face {
     font-family: urbanist;
-    src: url(Urbanist-Medium.ttf);
+    src: url(../fonts/Urbanist-Medium.ttf);
     font-weight: 400;
 }
 
 .content{
-    width: calc(var(--size) + 100px);
+    width: min(100% - 15px, var(--size));
     height: 100vh;
     margin-inline: auto;
     display: flex;
@@ -28,6 +28,8 @@
     justify-content: center;
     font-family: urbanist;
     background-color: var(--orange);
+    position: relative;
+    z-index: 1;
 }
 .field{
     display: flex;
@@ -68,8 +70,8 @@
 .line_hor:nth-child(4){
     bottom: 33%;
 }
-#reset, .counter{
-    width: 300px;
+.reset, .counter{
+    width: calc(100% - 40px);
     height: 60px;
     line-height: 60px;
     margin: 30px;
@@ -81,8 +83,38 @@
     transition: all .15s ease-out;
     text-align: center;
 }
-#reset:hover{
+.reset:hover{
     background-color: var(--btn_bg_hover);
+}
+.dialog{
+    width: calc(80% - 20px);
+    height: calc(50% - 20px);
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.font_size_48{
+    font-family: urbanist;
+    font-size: 48px;
+    color: var(--color);
+    text-align: center;
+}
+.black{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9;
+    background-color: #2c2c2c;
+    opacity: .7;
 }
 @media screen and (orientation: portrait) {
     *:root{
