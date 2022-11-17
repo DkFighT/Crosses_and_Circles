@@ -109,7 +109,7 @@
     text-align: center;
 }
 .black{
-    width: 100vw;
+    width: var(--size);
     height: 100vh;
     position: absolute;
     z-index: 9;
