@@ -62,6 +62,7 @@ btn2.addEventListener('click', function (){
     }
     dialog.style.display = 'none';
     black.style.display = 'none';
+    bot();
 });
 function reset_field(){
         for(let i = 0; i < field.length; i++){
