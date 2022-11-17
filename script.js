@@ -4,6 +4,7 @@ var btn2 = document.getElementById('reset2');
 var dialog = document.getElementById('dialog');
 var black = document.getElementById('black');
 var flag = true;
+console.log(window.innerWidth);
 const main_f = () => {
     bot();
     for(let i = 0; i < field.length; i++){
