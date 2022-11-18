@@ -41,7 +41,7 @@ const main_f = () => {
 main_f();
 function bot(){
 
-    if((flag == true)){
+    if(flag == true){
         var r = minimax(origBoard, aiPlayer).index;
         field[r].innerHTML = 'X';
         origBoard[r] = 'X';
