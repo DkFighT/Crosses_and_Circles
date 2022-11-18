@@ -84,7 +84,7 @@ btn2.addEventListener('click', function (){
 });
 function reset_field(){
     for(let i = 0; i < field.length; i++){
-        field[j].innerHTML = '';
+        field[i].innerHTML = '';
     }
     flag = true;
     origBoard = [0,1,2,3,4,5,6,7,8];
